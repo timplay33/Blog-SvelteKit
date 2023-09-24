@@ -1,0 +1,21 @@
+<div class="navbar bg-base-100">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl" href="/">Tim Heidler</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li>
+          <a class="text-lg" href="/">Home</a>
+        </li>
+        <li>
+          <a class="text-lg" href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a class="text-lg" href="https://github.com/timplay33">GitHub</a>
+        </li>
+        <li>
+          <a class="text-lg" href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
