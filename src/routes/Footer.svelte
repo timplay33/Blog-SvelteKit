@@ -1,11 +1,21 @@
 <footer class="footer p-10 bg-base-200 text-base-content">
-    <aside>
-      <img src="../favicon.png" width="50" height="50" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"/>
-      <p>Tim Heidler<br/>© 2023 Tim Heidler. All rights reserved.</p>
-    </aside>
-    <nav>
-      <header class="footer-title">Me</header>
-      <a class="link link-hover" href="/about">About Me</a>
-      <a class="link link-hover" href="/#contact">Contact</a>
-    </nav>
-  </footer>
+	<aside>
+		<img
+			src="../favicon.png"
+			width="50"
+			height="50"
+			viewBox="0 0 24 24"
+			fill-rule="evenodd"
+			clip-rule="evenodd"
+			class="fill-current"
+		/>
+		<p>
+			Tim Heidler<br />© {new Date().getFullYear()} Tim Heidler. All rights reserved.
+		</p>
+	</aside>
+	<nav>
+		<header class="footer-title">Me</header>
+		<a class="link link-hover" href="/about">About Me</a>
+		<a class="link link-hover" href="/#contact">Contact</a>
+	</nav>
+</footer>
