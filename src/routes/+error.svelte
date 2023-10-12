@@ -11,9 +11,9 @@
 			{:else if $page.status == 500}
 				<p class="py-6">The server encountered an internal error.</p>
 			{/if}
-			<a href="javascript:history.back()" class="btn btn-secondary">Get back</a>
+			<a href="javascript:history.back()" class="btn btn-ghost">Get back</a>
 			<span>or go to</span>
-			<a href="/" class="btn btn-secondary">Home</a>
+			<a href="/" class="btn btn-ghost">Home</a>
 		</div>
 	</div>
 </div>
