@@ -5,6 +5,10 @@
 	import SvelteMarkdown from 'svelte-markdown';
 </script>
 
+<svelte:head>
+	<title>Tim Heidler | {article.title}</title>
+</svelte:head>
+
 <div class="hero min-h-full py-6 bg-base-200">
 	<div class="hero-content flex-col lg:flex-row">
 		<img src={article.image} alt={article.imageAlt} class="max-w-sm rounded-lg shadow-2xl" />

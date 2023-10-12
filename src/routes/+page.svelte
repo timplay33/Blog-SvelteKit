@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Tim Heidler | Home</title>
+</svelte:head>
+
 <div class="hero min-h-screen bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<img src="../hero.png" alt="" class="max-w-sm rounded-lg shadow-2xl" />

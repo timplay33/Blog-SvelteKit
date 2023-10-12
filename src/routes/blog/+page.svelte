@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>Tim Heidler | Blog</title>
+</svelte:head>
+
 <div class="text-center py-6">
 	<div>
 		<h2 class="text-3xl font-bold">Articles</h2>
