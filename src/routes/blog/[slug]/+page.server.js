@@ -10,6 +10,6 @@ let { data } = await supabase.from('posts').select().eq('slug', params.slug);
 
   }
     return {
-      articles: data ?? [],
+      posts: data ?? [],
     };
 }

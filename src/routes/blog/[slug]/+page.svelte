@@ -1,23 +1,23 @@
 <script>
 	export let data;
-	let article = data.articles[0];
-	const body = article.body;
+	let post = data.posts[0];
+	const body = post.body;
 	import SvelteMarkdown from 'svelte-markdown';
 </script>
 
 <svelte:head>
-	<title>Tim Heidler | {article.title}</title>
+	<title>Tim Heidler | {post.title}</title>
 </svelte:head>
 
 <div class="hero min-h-full py-6 bg-base-200">
 	<div class="hero-content flex-col lg:flex-row">
-		<img src={article.image} alt={article.imageAlt} class="max-w-sm rounded-lg shadow-2xl" />
+		<img src={post.image} alt={post.imageAlt} class="max-w-sm rounded-lg shadow-2xl" />
 		<div>
-			<h1 class="text-5xl font-bold">{article.title}</h1>
-			<p class="py-6">{article.description}</p>
+			<h1 class="text-5xl font-bold">{post.title}</h1>
+			<p class="py-6">{post.description}</p>
 			<p>
-				by <span class="text-primary-content">{article.author}</span> on
-				<span class="text-primary-content">{article.created_at}</span>
+				by <span class="text-primary-content">{post.author}</span> on
+				<span class="text-primary-content">{post.created_at}</span>
 			</p>
 		</div>
 	</div>

@@ -12,31 +12,31 @@
 	</div>
 
 	<div class="flex flex-row flex-wrap justify-center">
-		{#each data.articles as article}
+		{#each data.posts as post}
 			<div class="carousel-item m-5">
-				<a href={article.slug}>
+				<a href={post.slug}>
 					<div class="card w-96 bg-base-100 shadow-xl">
 						<figure>
 							<img
-								src={article.image}
-								alt={article.imageAlt}
+								src={post.image}
+								alt={post.imageAlt}
 								class="w-full h-52 object-cover"
 								loading="lazy"
 							/>
 						</figure>
 						<div class="card-body">
 							<div class="h-40 overflow-hidden">
-								<h2 class="card-title">{article.title}</h2>
+								<h2 class="card-title">{post.title}</h2>
 								<p class="h-3" />
 								<p>
-									by <span class="text-primary-content">{article.author}</span> on
-									<span class="text-primary-content">{article.created_at}</span>
+									by <span class="text-primary-content">{post.author}</span> on
+									<span class="text-primary-content">{post.created_at}</span>
 								</p>
 								<p class="h-3" />
-								<p>{article.description}</p>
+								<p>{post.description}</p>
 							</div>
 							<div class="card-actions justify-end">
-								<a href="blog/{article.slug}" class="btn btn-primary">Continue Reading</a>
+								<a href="blog/{post.slug}" class="btn btn-primary">Continue Reading</a>
 							</div>
 						</div>
 					</div>
