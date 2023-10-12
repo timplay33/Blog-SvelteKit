@@ -1,8 +1,9 @@
 import { supabase } from "$lib/supabaseClient";
 
 export async function load() {
-  const { data } = await supabase.from("articles").select();
+  
+let { data} = await supabase.from('posts').select().order('created_at', { ascending: false }).limit(3)
   return {
-    articles: data ?? [],
+    posts: data ?? [],
   };
 }

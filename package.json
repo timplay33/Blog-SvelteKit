@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@supabase/supabase-js": "^2.36.0"
+		"@supabase/supabase-js": "^2.36.0",
+		"svelte-markdown": "^0.4.0"
 	}
 }
