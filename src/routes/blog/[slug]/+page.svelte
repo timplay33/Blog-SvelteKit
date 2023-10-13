@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<title>Tim Heidler | {post.title}</title>
+	<meta name="description" content={post.description} />
 </svelte:head>
 
 <div class="hero min-h-full py-6 bg-base-200">

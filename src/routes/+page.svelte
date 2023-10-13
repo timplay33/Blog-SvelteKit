@@ -4,6 +4,11 @@
 
 <svelte:head>
 	<title>Tim Heidler | Home</title>
+	<meta
+		name="description"
+		content="This is my blog! I use this space to document my adventures in development, sharing how I’ve overcome issues
+	I’ve run into, useful resources, and more."
+	/>
 </svelte:head>
 
 <div class="hero min-h-screen bg-base-200">

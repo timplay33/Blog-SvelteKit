@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Tim Heidler | Blog</title>
+	<meta name="description" content="here are all my blog posts!" />
 </svelte:head>
 
 <div class="text-center py-6">

@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Tim Heidler | About</title>
+	<meta name="description" content="This is about me." />
 </svelte:head>
 
 <div class="hero min-h-screen bg-base-200">
