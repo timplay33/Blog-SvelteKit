@@ -8,6 +8,7 @@
 			fill-rule="evenodd"
 			clip-rule="evenodd"
 			class="fill-current"
+			alt="Logo"
 		/>
 		<p>
 			Tim Heidler<br />© {new Date().getFullYear()} Tim Heidler. All rights reserved.
