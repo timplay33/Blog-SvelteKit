@@ -1,38 +1,13 @@
-# create-svelte
+# Blog-Sveltekit-Supabase
+is the new version of my blog. Now with Supabase as the back-end and SvelteKit as the front-end.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+hosted at [https://heidler.site](https://heidler.site)
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+## build docker image
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+docker buildx build --platform linux/amd64,linux/arm64 -t ghcr.io/timplay33/blog-sveltekit-supabase:latest --push .
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+## run container
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+docker run -p 3000:3000 ghcr.io/timplay33/blog-sveltekit-supabase:latest
+```
