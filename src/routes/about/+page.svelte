@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Tim Heidler | About</title>
+	<title>About | Tim Heidler</title>
 	<meta name="description" content="This is about me." />
 </svelte:head>
 

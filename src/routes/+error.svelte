@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Tim Heidler | ERROR {$page.status}</title>
+	<title>ERROR {$page.status} | Tim Heidler</title>
 </svelte:head>
 
 <div class="hero min-h-screen bg-base-200">

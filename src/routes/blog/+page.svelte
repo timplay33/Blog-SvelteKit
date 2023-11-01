@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Tim Heidler | Blog</title>
+	<title>Blog | Tim Heidler</title>
 	<meta name="description" content="here are all my blog posts!" />
 </svelte:head>
 

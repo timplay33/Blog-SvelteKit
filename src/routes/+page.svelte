@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Tim Heidler | Home</title>
+	<title>Home | Tim Heidler</title>
 	<meta
 		name="description"
 		content="This is my blog! I use this space to document my adventures in development, sharing how I’ve overcome issues
