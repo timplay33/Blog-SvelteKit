@@ -17,6 +17,6 @@
 	<nav>
 		<header class="footer-title">Me</header>
 		<a class="link link-hover" href="/about">About Me</a>
-		<a class="link link-hover" href="/#contact">Contact</a>
+		<a class="link link-hover" href="/contact">Contact</a>
 	</nav>
 </footer>
