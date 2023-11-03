@@ -5,7 +5,7 @@
 <svelte:window bind:innerWidth={screenSize} />
 <div class="navbar bg-base-100">
 	<div class="flex-1">
-		<a class="btn btn-ghost normal-case text-xl" href="/">Tim Heidler</a>
+		<a class="btn btn-ghost normal-case text-xl text-base-content" href="/">Tim Heidler</a>
 	</div>
 	<div class="flex-none">
 		{#if screenSize >= 1024}

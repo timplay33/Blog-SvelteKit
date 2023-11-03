@@ -17,8 +17,8 @@
 			<h1 class="text-5xl font-bold">{post.title}</h1>
 			<p class="py-6">{post.description}</p>
 			<p>
-				by <span class="text-primary-content">{post.author}</span> on
-				<span class="text-primary-content">{post.created_at}</span>
+				by <span class="text-accent">{post.author}</span> on
+				<span class="text-accent">{post.created_at}</span>
 			</p>
 		</div>
 	</div>

@@ -57,8 +57,8 @@
 									<h2 class="card-title">{post.title}</h2>
 									<p class="h-3" />
 									<p>
-										by <span class="text-primary-content">{post.author}</span> on
-										<span class="text-primary-content">{post.created_at}</span>
+										by <span class="text-accent">{post.author}</span> on
+										<span class="text-accent">{post.created_at}</span>
 									</p>
 									<p class="h-3" />
 									<p>{post.description}</p>

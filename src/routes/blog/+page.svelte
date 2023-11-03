@@ -15,7 +15,7 @@
 	<div class="flex flex-row flex-wrap justify-center">
 		{#each data.posts as post}
 			<div class="carousel-item m-5">
-				<a href={post.slug}>
+				<a href="blog/{post.slug}">
 					<div class="card w-96 bg-base-100 shadow-xl">
 						<figure>
 							<img
@@ -30,8 +30,8 @@
 								<h2 class="card-title">{post.title}</h2>
 								<p class="h-3" />
 								<p>
-									by <span class="text-primary-content">{post.author}</span> on
-									<span class="text-primary-content">{post.created_at}</span>
+									by <span class="text-accent">{post.author}</span> on
+									<span class="text-accent">{post.created_at}</span>
 								</p>
 								<p class="h-3" />
 								<p>{post.description}</p>
