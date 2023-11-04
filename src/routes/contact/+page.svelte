@@ -17,6 +17,7 @@
 <div class="grid place-items-center">
 	<form id="contact" method="POST" use:enhance name="Contact Form" class="text-center sm:w-2/5">
 		<h1 class="text-4xl font-bold">Contact</h1>
+		<p>or contact via mail at <a href="mailto:tim@heidler.site" class="underline text-accent">tim@heidler.site</a></p>
 		<input class="hidden" name="hpfield" />
 		<p class="py-1">
 			<input
