@@ -24,7 +24,7 @@
 	</div>
 </div>
 <div class="flex justify-center">
-	<div id="markdown" class="w-4/5 pt-6">
+	<div id="markdown" class="w-4/5 py-6">
 		<SvelteMarkdown source={body} />
 	</div>
 </div>
