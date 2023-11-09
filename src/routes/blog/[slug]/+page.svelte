@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{post.title}| Tim Heidler</title>
+	<title>{post.title} | Tim Heidler</title>
 	<meta name="description" content={post.description} />
 </svelte:head>
 
