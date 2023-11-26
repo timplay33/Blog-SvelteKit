@@ -1,10 +1,16 @@
-import { supabase } from "$lib/supabaseClient";
+import { CreateUrl } from '$lib';
+import { getPosts, getPages } from '$lib/ghostClient';
+import { error } from '@sveltejs/kit';
 
-//const posts = [] 
-const { data } = await supabase.from("posts").select();
-const posts = data
-const pages = ["about", "blog"] //list of pages as a string ex. ["about", "blog", "contact"]
 
+const posts = await getPosts();
+if (!posts) {
+  throw error(500, "Api error");
+}
+const pages = await getPages();
+if (!pages) {
+  throw error(500, "Api error");
+}
 const site = "https://heidler.site"
 
 /** @type {import('./$types').RequestHandler} */
@@ -34,14 +40,14 @@ const sitemap = (posts, pages) => `<?xml version="1.0" encoding="UTF-8" ?>
   </url>
   ${pages.map((page) => `
   <url>
-    <loc>${site}/${page}</loc>
+    <loc>${site}/${page.slug}</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   `).join('')}
-  ${posts.map((post) => post.visible ? null : `
+  ${posts.map((post) =>`
   <url>
-    <loc>${site}/blog/${post.slug}</loc>
+    <loc>${site}/${CreateUrl(post)}</loc>
     <changefreq>weekly</changefreq>
     <lastmod>${post.updated_at}</lastmod>
     <priority>0.5</priority>

@@ -28,6 +28,17 @@ export const getSinglePost = async (slug) => {
     }
 };
 
+export const getPages = async () => {
+  try {
+    return await api.pages.browse({
+      limit: "all",
+    });
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+
   export const getSinglePage = async (slug) => {
     try {
       return await api.pages.read({
