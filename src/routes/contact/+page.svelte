@@ -27,6 +27,7 @@
 				placeholder="Name"
 				class="input input-bordered w-full"
 				bind:value={form.name}
+				disabled
 			/>
 		</p>
 		<p class="py-1">
@@ -37,6 +38,7 @@
 				placeholder="Email"
 				class="input input-bordered w-full"
 				bind:value={form.email}
+				disabled
 			/>
 		</p>
 		<p class="py-1">
@@ -46,10 +48,12 @@
 				placeholder="Your Message"
 				class="textarea textarea-bordered w-full textarea-lg px-4 pt-1 h-96"
 				bind:value={form.message}
+				disabled
 			/>
 		</p>
+		<span class="text-red-700">Form at the moment not available, please use the email provided above</span>
 		<p>
-			<button class="btn btn-primary my-1">Submit</button>
+			<button class="btn btn-primary my-1" disabled>Submit</button>
 		</p>
 	</form>
 </div>

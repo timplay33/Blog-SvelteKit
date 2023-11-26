@@ -1,5 +1,7 @@
 <script>
+	import { CreateUrl, FormatDate } from '$lib';
 	export let data;
+	data = data.data
 </script>
 
 <svelte:head>
@@ -15,12 +17,12 @@
 	<div class="flex flex-row flex-wrap justify-center">
 		{#each data.posts as post}
 			<div class="carousel-item m-5">
-				<a href="blog/{post.slug}">
+				<a href="{CreateUrl(post)}">
 					<div class="card w-96 bg-base-100 shadow-xl">
 						<figure>
 							<img
-								src={post.image}
-								alt={post.imageAlt}
+								src={post.feature_image}
+								alt="feature_image"
 								class="w-full h-52 object-cover"
 								loading="lazy"
 							/>
@@ -30,14 +32,14 @@
 								<h2 class="card-title">{post.title}</h2>
 								<p class="h-3" />
 								<p>
-									by <span class="text-accent">{post.author}</span> on
-									<span class="text-accent">{post.created_at}</span>
+									by <span class="text-accent">Tim Heidler</span> on
+									<span class="text-accent">{FormatDate(post.published_at)}</span>
 								</p>
 								<p class="h-3" />
-								<p>{post.description}</p>
+								<p>{post.excerpt}</p>
 							</div>
 							<div class="card-actions justify-end">
-								<a href="blog/{post.slug}" class="btn btn-primary">Continue Reading</a>
+								<a href="{CreateUrl(post)}" class="btn btn-primary">Continue Reading</a>
 							</div>
 						</div>
 					</div>

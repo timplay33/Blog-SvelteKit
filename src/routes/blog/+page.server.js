@@ -1,8 +1,12 @@
-import { supabase } from "$lib/supabaseClient";
+import { getPosts } from "$lib/ghostClient";
+import { error } from "@sveltejs/kit";
 
 export async function load() {
-  const { data } = await supabase.from("posts").select().order('created_at', { ascending: false });
+  const posts = await getPosts();
+  if (!posts) {
+    throw error(404, "Page not found");
+  }
   return {
-    posts: data ?? [],
+    data: { posts },
   };
 }
