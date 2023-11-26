@@ -1,15 +1,13 @@
-import { supabase } from "$lib/supabaseClient";
+import { GetSlugFromURl } from "$lib";
+import { getSinglePost } from "$lib/ghostClient";
 import { error } from "@sveltejs/kit";
 
 export async function load({params}) {
-
-    
-let { data } = await supabase.from('posts').select().eq('slug', params.slug);
-  if (data[0] == undefined) {
-    throw error(404, "Not Found");
-
+  const post = await getSinglePost(GetSlugFromURl(params.slug));
+  if (!post) {
+    throw error(404, "Page not found");
   }
-    return {
-      posts: data ?? [],
-    };
+  return {
+    data: { post },
+  };
 }

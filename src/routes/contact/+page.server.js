@@ -1,4 +1,5 @@
-import { supabase } from "$lib/supabaseClient";
+/*
+
 import { redirect } from "@sveltejs/kit";
 
 export const actions = {
@@ -16,3 +17,4 @@ export const actions = {
     }
 
 }
+*/
