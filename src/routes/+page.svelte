@@ -2,6 +2,8 @@
 	import { CreateUrl, FormatDate } from '$lib';
 	export let data;
 	data = data.data
+
+	let post = data.posts[0]
 </script>
 
 <svelte:head>
@@ -15,7 +17,26 @@
 
 <div class="hero min-h-screen bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse">
-		<img src="../hero.webp" alt="hero" height="510px" width="510px" class="max-w-sm rounded-lg shadow-2xl" />
+		<div id="post"> 
+			<h3 class="text-3xl">Latest post</h3>
+			<div class="carousel-item m-5">
+				<a href="{CreateUrl(post)}">
+					<div class="card w-72 bg-base-100 shadow-xl">
+						<figure>
+							<img
+								src={post.feature_image}
+								alt="feature_image"
+								class="w-full h-40 object-cover"
+								loading="lazy"
+							/>
+						</figure>
+						<div class="card-body">
+								<h2 class="card-title">{post.title}</h2>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
 		<div>
 			<h1 class="text-5xl font-bold">Welcome to my blog!</h1>
 			<p class="py-6">
