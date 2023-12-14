@@ -27,7 +27,6 @@
 								src={post.feature_image}
 								alt="feature_image"
 								class="w-full h-40 object-cover"
-								loading="lazy"
 							/>
 						</figure>
 						<div class="card-body">
