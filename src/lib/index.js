@@ -20,7 +20,7 @@ export const CreateUrl = function(post){
     if (day.length < 2) 
         day = '0' + day;
 
-    return "blog/"+[year, month, day, post.slug].join('-');
+    return "/blog/"+[year, month, day, post.slug].join('-');
 }
 
 export const GetSlugFromURl = function(URL){
